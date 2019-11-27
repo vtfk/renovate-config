@@ -3,5 +3,8 @@
   "devDependencies": {
     "automerge": true
   },
+  "separateMultipleMajor": true,
+  "ignoreUnstable": true,
+  "labels": ["dependencies"],
   "assignees": ["MatsAnd"]
 }
