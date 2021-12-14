@@ -21,7 +21,7 @@
         "security"
       ]
     },
-    "commitBody": "Dependency update (patch)",
+    "commitBody": "Dependency update (patch) :)",
     "packageRules": [
       {
         "automerge": true,
