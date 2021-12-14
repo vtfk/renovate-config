@@ -1,45 +1,42 @@
 {
-  "onboardingConfig": { "extends": ["github>vtfk/renovate-config"] },
-  "default": {
-    "description": "Default Renovate config for VTFK",
-    "extends": [
-      "config:base",
-      ":disableDependencyDashboard"
-    ],
-    "separateMultipleMajor": true,
-    "separateMinorPatch": true,
-    "ignoreUnstable": true,
-    "timezone": "Europe/Oslo",
-    "assigneesFromCodeOwners": true,
-    "assigneesSampleSize": 1,
-    "stabilityDays": 2,
+  "description": "Default Renovate config for VTFK",
+  "extends": [
+    "config:base",
+    ":disableDependencyDashboard"
+  ],
+  "separateMultipleMajor": true,
+  "separateMinorPatch": true,
+  "ignoreUnstable": true,
+  "timezone": "Europe/Oslo",
+  "assigneesFromCodeOwners": true,
+  "assigneesSampleSize": 1,
+  "stabilityDays": 2,
+  "labels": [
+    "dependencies"
+  ],
+  "vulnerabilityAlerts": {
     "labels": [
-      "dependencies"
-    ],
-    "vulnerabilityAlerts": {
-      "labels": [
-        "security"
+      "security"
+    ]
+  },
+  "commitBody": "Dependency update (patch) :)",
+  "packageRules": [
+    {
+      "automerge": true,
+      "matchUpdateTypes": [
+        "patch",
+        "pin",
+        "digest"
       ]
     },
-    "commitBody": "Dependency update (patch) :)",
-    "packageRules": [
-      {
-        "automerge": true,
-        "matchUpdateTypes": [
-          "patch",
-          "pin",
-          "digest"
-        ]
-      },
-      {
-        "automerge": true,
-        "matchDepTypes": [
-          "devDependencies",
-          "peerDependencies",
-          "optionalDependencies"
-        ]
-      }
-    ],
-    "dependencyDashboard": false
-  }
+    {
+      "automerge": true,
+      "matchDepTypes": [
+        "devDependencies",
+        "peerDependencies",
+        "optionalDependencies"
+      ]
+    }
+  ],
+  "dependencyDashboard": false
 }
