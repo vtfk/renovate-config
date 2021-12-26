@@ -35,6 +35,11 @@
         "devDependencies",
         "peerDependencies",
         "optionalDependencies"
+      ],
+      "matchUpdateTypes": [
+        "patch",
+        "pin",
+        "digest"
       ]
     }
   ],
