@@ -10,7 +10,7 @@
   "timezone": "Europe/Oslo",
   "assigneesFromCodeOwners": true,
   "assigneesSampleSize": 1,
-  "stabilityDays": 2,
+  "stabilityDays": 3,
   "labels": [
     "dependencies"
   ],
